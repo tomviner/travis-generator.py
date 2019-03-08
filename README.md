@@ -61,7 +61,7 @@ script: curl -fLs https://git.io/<yyy> | bash -s
 ```
 
 #### Related projects
-+   [`classifiers-generator` - classifiers generator](https://pypi.org/project/readme-docstring/)
++   [`classifiers-generator` - classifiers generator](https://pypi.org/project/classifiers-generator/)
 +   [`readme-badges` - `README.md` badges](https://pypi.org/project/readme-badges/)
 +   [`readme-docstring` - generate README.md from python docstrings](https://pypi.org/project/readme-docstring/)
 +   [`readme-generator` - `README.md` generator](https://pypi.org/project/readme-generator/)
