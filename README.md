@@ -1,12 +1,14 @@
-<!-- https://pypi.org/project/readme-generator/ -->
+<!--
+https://pypi.org/project/readme-generator/
+-->
 
 [![](https://img.shields.io/pypi/pyversions/travis-generator.svg?longCache=True)](https://pypi.org/project/travis-generator/)
 [![](https://img.shields.io/pypi/v/travis-generator.svg?maxAge=3600)](https://pypi.org/project/travis-generator/)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/travis-generator.py.svg?branch=master)](https://travis-ci.org/looking-for-a-job/travis-generator.py/)
 
-#### Install
+#### Installation
 ```bash
-[sudo] pip install travis-generator
+$ [sudo] pip install travis-generator
 ```
 
 #### Features
@@ -61,12 +63,15 @@ script: curl -fLs https://git.io/<yyy> | bash -s
 ```
 
 #### Related projects
-+   [`classifiers-generator` - classifiers generator](https://pypi.org/project/classifiers-generator/)
-+   [`readme-badges` - `README.md` badges](https://pypi.org/project/readme-badges/)
-+   [`readme-docstring` - generate README.md from python docstrings](https://pypi.org/project/readme-docstring/)
++   [`classifiers-generator` - python classifiers generator](https://pypi.org/project/classifiers-generator/)
++   [`commands-generator` - shell commands generator](https://pypi.org/project/commands-generator/)
++   [`launchd-generator` - launchd.plist generator](https://pypi.org/project/launchd-generator/)
 +   [`readme-generator` - `README.md` generator](https://pypi.org/project/readme-generator/)
 +   [`setupcfg-generator` - `setup.cfg` generator](https://pypi.org/project/setupcfg-generator/)
 +   [`travis-generator` - `.travis.yml` generator](https://pypi.org/project/travis-generator/)
++   [`travis-exec` - execute command for all travis repos](https://pypi.org/project/travis-exec/)
++   [`travis-cron` - manage travis cron](https://pypi.org/project/travis-cron/)
++   [`travis-env` - manage travis environment variables](https://pypi.org/project/travis-env/)
 
 <p align="center">
     <a href="https://pypi.org/project/readme-generator/">readme-generator</a>

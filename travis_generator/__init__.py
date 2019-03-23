@@ -213,18 +213,13 @@ class Classifiers:
 class Travis:
     """`.travis.yml` generator class"""
     keys = KEYS
+    language = "python"
     generator_url = "https://pypi.org/project/travis-generator/"
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
             setattr(self, k, v)
 
-    @property
-    def language(self):
-        if self.python:
-            return "python"
-
-    @property
     def python(self):
         if os.path.exists("setup.py"):
             pyversions = Classifiers().pyversions
@@ -232,7 +227,9 @@ class Travis:
             for r in [2, 3]:
                 if r in pyversions:
                     pyversions.remove(r)
-            return list(map(quote, pyversions))
+            if pyversions:
+                return list(map(quote, pyversions))
+            return [quote("3.6")]
 
     @property
     def data(self):
@@ -241,7 +238,7 @@ class Travis:
             value = getattr(self, key, None)
             if inspect.isroutine(value):
                 value = value()
-            if value is not None and value != "":
+            if value is not None and value != "" and value != []:
                 data[key] = value
         return data
 
