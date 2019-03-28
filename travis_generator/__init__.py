@@ -3,7 +3,7 @@
 import inspect
 import os
 import ruamel.yaml as yaml
-from ruamel.yaml.scalarstring import DoubleQuotedScalarString, SingleQuotedScalarString
+from ruamel.yaml.scalarstring import DoubleQuotedScalarString
 import public
 import replace
 try:
